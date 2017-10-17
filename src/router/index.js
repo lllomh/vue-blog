@@ -8,6 +8,7 @@ const about = r => require.ensure([], () => r(require('@/page/about/about')), 'a
 const life = r => require.ensure([], () => r(require('@/page/life/life')), 'life');
 const doing = r => require.ensure([], () => r(require('@/page/doing/doing')), 'doing');
 const share = r => require.ensure([], () => r(require('@/page/share/share')), 'share');
+//const homeClinder = r => require.ensure([], () => r(require('@/page/home/children/homeListCent')), 'homeClinder');
 //const home = r => require.ensure([], () => r(require('@/components/Home')), 'home');
 
 Vue.use(Router);
@@ -18,8 +19,8 @@ export default new Router({
         { path: '', component: home },
         { path: '/about', component: about },
         { path: '/life', component: life },
-        { path: '/doing', component: doing},
-        { path: '/share', component: share }
+        { path: '/doing', component: doing}
+        //{ path: '/homeClinder', component: homeClinder }
     ]
 })
 

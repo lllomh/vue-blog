@@ -2,7 +2,7 @@
   <div>
           <hede></hede>
       <transition name="fade">
-          <router-view></router-view>
+          <router-view class="ss"></router-view>
       </transition>
          <fote></fote>
   </div>

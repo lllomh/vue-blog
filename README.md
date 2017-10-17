@@ -20,31 +20,3 @@ npm run build
 
 
 
-# 随手记
-
-
-
-``` js
- new Vue({
-    el: '#app',
-    router,
-    template: '<App/>',
-    components: { App }
- })
-```
- 
-``` js
- 
-
-   template: '<App/>',
-    components: { App }
-      
-```
-
-### 用
-
-```js
-   render:x => x(App)
-```
-  
-###代替   2.0  
