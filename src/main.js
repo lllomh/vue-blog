@@ -3,12 +3,9 @@
 
 import Vue from 'vue'
 import App from './App'
-import router from '@/router/index'
+import router from '@/router/index'//导入自定义路由文件
 
 Vue.config.productionTip = false;
-
-
-
 
 /* eslint-disable no-new */
 //new Vue({
