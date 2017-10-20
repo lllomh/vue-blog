@@ -5,7 +5,7 @@
 
             <p>路由name={{$route.name}}</p>
 
-            <router-link to="/home"><span>首页</span><span class="en">Protal</span></router-link>
+            <router-link to="/home"><span>首页de </span><span class="en">Protal</span></router-link>
 
             <router-link :to="{name:'homeClinder',params:{id:1212}}"><span>首页zitanch</span><span class="en">111</span></router-link>
 
