@@ -2,7 +2,14 @@
     <header id="head_top">
         <div id="logo"><a href="/"></a></div>
         <nav class="topnav" id="topnav">
-            <router-link to="/"><span>首页</span><span class="en">Protal</span></router-link>
+
+            <p>路由name={{$route.name}}</p>
+
+            <router-link to="/home"><span>首页</span><span class="en">Protal</span></router-link>
+
+            <router-link :to="{name:'homeClinder',params:{id:1212}}"><span>首页zitanch</span><span class="en">111</span></router-link>
+
+            <router-link :to="{name:'lifeClind',params:{id:'fxbgfgdgdsgfds'}}"><span>首页zitanch</span><span class="en">111</span></router-link>
 
             <router-link to="/about"><span>关于我</span><span class="en">About</span></router-link>
 
@@ -29,6 +36,8 @@
     }
 
     }
+
+
 </script>
 
 <style scoped>

@@ -1,6 +1,15 @@
 <template>
     <div>
 
+
+        <section class="contenr">
+            <transition name="fade">
+                <router-view class="main"></router-view>
+            </transition>
+        </section>
+
+
+
         <article class="blogs">
             <h1 class="t_nav"><span>好咖啡要和朋友一起品尝，好“模板”也要和同样喜欢它的人一起分享。 </span><a href="/" class="n1">网站首页</a><a href="/" class="n2">模板分享</a></h1>
             <div class="newblog left">

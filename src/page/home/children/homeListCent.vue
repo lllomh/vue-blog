@@ -1,10 +1,12 @@
 <template>
     <div>
 
+
+
         <article class="blogs">
             <h1 class="t_nav"><span>您当前的位置：<a href="/index.html">首页</a>&nbsp;&gt;&nbsp;<a href="/news/s/">慢生活</a>&nbsp;&gt;&nbsp;<a href="/news/s/">日记</a></span><a href="/" class="n1">网站首页</a><a href="/" class="n2">日记</a></h1>
             <div class="index_about">
-                <h2 class="c_titile">爱情不容有错，即使错了那就重来</h2>
+                <h2 class="c_titile">爱情不容有错，即使错了那就重来{{$route.params.id}}</h2>
                 <p class="box_c"><span class="d_time">发布时间：2013-09-08</span><span>编辑：杨青</span><span>互动QQ群：<a href="http://wp.qq.com/wpa/qunwpa?idkey=d4d4a26952d46d564ee5bf7782743a70d5a8c405f4f9a33a60b0eec380743c64">280998807</a></span></p>
                 <ul class="infos">
                     <p>进一好友空间，再一次看到她置顶的那一篇《他和她的故事》爱情在他俩的生活中经历了不少分分合合，但最后俩人还是走在了一起。当今天再一次阅读的时候，我没有第一次那么感性，我注重他们俩曲折的过程，其中出现过第三者...</p>
@@ -41,11 +43,6 @@
             <aside class="right">
                 <!-- Baidu Button BEGIN -->
                 <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a class="bds_qzone"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a class="shareCount"></a></div>
-                <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585" ></script>
-                <script type="text/javascript" id="bdshell_js"></script>
-                <script type="text/javascript">
-                    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
-                </script>
                 <!-- Baidu Button END -->
                 <div class="blank"></div>
                 <div class="news">
