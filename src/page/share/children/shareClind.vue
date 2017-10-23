@@ -1,6 +1,6 @@
 <template>
     <div>
-       <div style="width: 500px;height: 600px;background: blue">1111</div>
+       <div style="height: 600px;background: blue">222222</div>
 
     </div>
 </template>

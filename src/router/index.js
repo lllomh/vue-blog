@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
+Vue.use(Router);
 
 
 const home = r => require.ensure([], () => r(require('@/page/home/home')), 'home');
@@ -15,24 +15,33 @@ const dingClind = r => require.ensure([], () => r(require('@/page/doing/children
 
 //const home = r => require.ensure([], () => r(require('@/components/Home')), 'home');
 
-Vue.use(Router);
+
 export default new Router({
     mode: 'history',
     base: __dirname,
     routes: [
-        {path: '/home', component: home,
-          children:[
-              {  path: '/', name:'home', component: shareClind},
-              {  path: 'homeClinder', name:'homeClinder', component: homeClinder},
-              {  path: 'lifeClind', name:'lifeClind', component: lifeClind}
-          ]
+        // {path: '/', components: {
+        //     default:home,
+        //     left:shareClind,
+        //     right:lifeClind
+        // }},
+        // {path: '/home', components: {
+        //     default:doing,
+        //     left:shareClind,
+        //     right:lifeClind
+        // }},
+        {path: '/home/:aaa/:bbbb',name:'home',component: home,
+          // children:[
+          //     {  path: '/', name:'home', component: shareClind},
+          //     {  path: 'homeClinder', name:'homeClinder', component: homeClinder},
+          //     {  path: 'lifeClind', name:'lifeClind', component: lifeClind}
+          // ]
         },
-        {path: '/share', component: share,
-            children:[
-                {  path: 'shareClind',name:'shareClind', component: shareClind},
-            ]
+        {path: '/share',name:'share', component: share,
+            // children:[
+            //     {  path: 'shareClind',name:'shareClind', component: shareClind},
+            // ]
         }
     ]
 })
-
 
