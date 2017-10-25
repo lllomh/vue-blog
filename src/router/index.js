@@ -12,6 +12,7 @@ const homeClinder = r => require.ensure([], () => r(require('@/page/home/childre
 const lifeClind = r => require.ensure([], () => r(require('@/page/life/children/lifeClind.vue')), 'lifeClind');
 const shareClind = r => require.ensure([], () => r(require('@/page/share/children/shareClind')), 'shareClind');
 const dingClind = r => require.ensure([], () => r(require('@/page/doing/children/dingClid')), 'dingClind');
+const traition = r => require.ensure([], () => r(require('@/page/transtion/transtion')), 'transtion');
 
 //const home = r => require.ensure([], () => r(require('@/components/Home')), 'home');
 
@@ -30,7 +31,8 @@ export default new Router({
         //     left:shareClind,
         //     right:lifeClind
         // }},
-        {path: '/home/:aaa/:bbbb',name:'home',component: home,
+        // {path: '/home/:aaa/:bbbb',name:'home',component: home,alias:'bg',
+        {path: '/home',name:'home',component: home ,alias:'/bg',
           // children:[
           //     {  path: '/', name:'home', component: shareClind},
           //     {  path: 'homeClinder', name:'homeClinder', component: homeClinder},
@@ -41,6 +43,8 @@ export default new Router({
             // children:[
             //     {  path: 'shareClind',name:'shareClind', component: shareClind},
             // ]
+        },
+        {path: '/traition',name:'traition', component: traition
         }
     ]
 })

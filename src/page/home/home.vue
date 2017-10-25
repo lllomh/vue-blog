@@ -33,6 +33,9 @@
               </ul>
           </div>
       </div>
+
+
+
       <article>
           <h2 class="title_tj">
               <p>文章<span>推荐</span></p>
@@ -118,7 +121,6 @@
       </article>
 
 
-
   </div>
 </template>
 
@@ -131,7 +133,6 @@ export default {
       msg: '123'
     }
   }
-
 }
 
 </script>
