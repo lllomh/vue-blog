@@ -2,15 +2,23 @@
     <div>
 
 
-        <section class="contenr">
-            <transition name="fade">
-                <router-view class="main"></router-view>
-            </transition>
-        </section>
+        <!--<section class="contenr">-->
+            <!--<transition name="fade">-->
+                <!--<router-view class="main"></router-view>-->
+            <!--</transition>-->
+        <!--</section>-->
 
 
 
         <article class="blogs">
+
+            <ul>
+                <li v-for="(item,index) in items">
+                    {{ index }} {{item.mess}}
+                </li>
+            </ul>
+
+
             <h1 class="t_nav"><span>好咖啡要和朋友一起品尝，好“模板”也要和同样喜欢它的人一起分享。 </span><a href="/" class="n1">网站首页</a><a href="/" class="n2">模板分享</a></h1>
             <div class="newblog left">
                 <h2>仿新浪博客风格·梅——古典个人博客模板</h2>
@@ -102,6 +110,32 @@
     </div>
 </template>
 <script>
+    export default{
+        name:'shae',
+        data(){
+            return{
+                items:[
+                    {mess:'fesi'},
+                    {mess:'second'},
+                    {mess:'wew'},
+                    {mess:'dsd'},
+                    {mess:'xzc'},
+                    {mess:'xzcxzc'},
+                    {mess:'secoxzcznd'},
+                    {mess:'zc'},
+                    {mess:'xzc'},
+                    {mess:'xzc'},
+                    {mess:'secvcond'},
+                    {mess:'sec ond'},
+                    {mess:'xc'},
+                    {mess:'jk'},
+                    {mess:'hjk'},
+                    {mess:'yu'}
+                ],
+                tyestdta:1
+            }
+        }
+    }
 
 </script>
 
