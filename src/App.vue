@@ -19,6 +19,8 @@ export default {
       fote
   }
 }
+
+
 </script>
 <style scoped>
     .fade-enter-active, .fade-leave-active {
