@@ -44,6 +44,8 @@
 
 
 <style scoped>
+
+
     .aboutcon{background:url(../../images/aboutphoto.jpg) no-repeat bottom right; color:#696969}
     h1.t_nav { border-bottom: #F1F1F1 1px solid; font-size: 12px; font-weight: normal; line-height: 40px; height: 40px; }
     h1.t_nav a{width: 100px; display: block; text-align: center ; color: #fff; float:left}

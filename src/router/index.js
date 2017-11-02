@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-Vue.use(Router);
+Vue.use(Router);//注册路由
 
 
 const home = r => require.ensure([], () => r(require('@/page/home/home')), 'home');
@@ -40,6 +40,11 @@ export default new Router({
           // ]
         },
         {path: '/share',name:'share', component: share,
+            // children:[
+            //     {  path: 'shareClind',name:'shareClind', component: shareClind},
+            // ]
+        },
+        {path: '/about',name:'about', component: about,
             // children:[
             //     {  path: 'shareClind',name:'shareClind', component: shareClind},
             // ]

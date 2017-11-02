@@ -37,6 +37,10 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')]
       },
+      {  //新加less支持
+        test:/\.less$/,
+        loader:"style!css!less"
+      },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',

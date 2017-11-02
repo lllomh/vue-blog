@@ -17,7 +17,7 @@
 
             <!--<router-link :to="{name:'lifeClind',params:{id:'fxbgfgdgdsgfds'}}"><span>首页zitanch</span><span class="en">111</span></router-link>-->
 
-            <!--<router-link to="/about"><span>关于我</span><span class="en">About</span></router-link>-->
+            <router-link to="/about"><span>关于我</span><span class="en">About</span></router-link>
 
             <!--<router-link to="/life"><span>慢生活</span><span class="en">Life</span></router-link>-->
 
