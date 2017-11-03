@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import Router from 'vue-router'//主路由文件
 Vue.use(Router);//注册路由
 
 
