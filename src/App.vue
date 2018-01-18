@@ -2,7 +2,7 @@
   <div>
           <hede></hede>
       <transition name="fade">
-          <router-view class="ss"></router-view>
+          <router-view class="man"></router-view>
       </transition>
          <fote></fote>
   </div>
@@ -24,10 +24,9 @@ export default {
 </script>
 <style scoped>
     .fade-enter-active, .fade-leave-active {
-        transition: opacity 3.9s;
+        transition: opacity 0.2s;
     }
     .fade-enter, .fade-leave-active {
         opacity: 0;
     }
 </style>
-

@@ -40,44 +40,18 @@
           <h2 class="title_tj">
               <p>文章<span>推荐</span></p>
           </h2>
-          <div class="bloglist left">
-              <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
+          <div class="bloglist left" v-for="tods in todos">
+            <template  v-for="h in jiss">
+              <h3>{{tods.text}}</h3>
               <figure><img src="../../images/001.png"></figure>
               <ul>
-                  <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
+                  <p>{{h.text}}</p>
 
                   <router-link class="readmore" to="/home/homeClinder">阅读全文>></router-link>
 
               </ul>
               <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
-              <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-              <figure><img src="../../images/001.png"></figure>
-              <ul>
-                  <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-                  <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-              </ul>
-              <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
-              <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-              <figure><img src="../../images/001.png"></figure>
-              <ul>
-                  <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-                  <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-              </ul>
-              <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
-              <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-              <figure><img src="../../images/001.png"></figure>
-              <ul>
-                  <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-                  <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-              </ul>
-              <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
-              <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
-              <figure><img src="../../images/001.png"></figure>
-              <ul>
-                  <p>如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话， 那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...</p>
-                  <a title="/" href="/" target="_blank" class="readmore">阅读全文>></a>
-              </ul>
-              <p class="dateview"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
+       </template>
           </div>
           <aside class="right">
               <div class="weather"><iframe width="250" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=1"></iframe></div>
@@ -130,7 +104,17 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: '123'
+      msg: '123',
+      todos: [
+              { text: '222' },
+              { text: '学习 Vue' },
+              { text: '整个牛项目' }
+            ],
+      jiss:[
+        {text:"ceshi"},
+        {text:"sdasdasd"},
+        {text:"poppsadkjasdknkl"}
+      ]
     }
   }
 }

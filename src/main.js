@@ -21,6 +21,9 @@ new Vue({
     router,
     render: h => h(App),
 
+
+
+
     beforeCreate:function(){
         console.log("1.初始化之后========");
         console.log(this.data)
@@ -67,5 +70,3 @@ new Vue({
 });
 
 //Vue.use(VueRouter);
-
-

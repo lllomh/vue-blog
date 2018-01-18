@@ -14,6 +14,9 @@ const shareClind = r => require.ensure([], () => r(require('@/page/share/childre
 const dingClind = r => require.ensure([], () => r(require('@/page/doing/children/dingClid')), 'dingClind');
 const traition = r => require.ensure([], () => r(require('@/page/transtion/transtion')), 'transtion');
 
+const aa = r => require.ensure([], () => r(require('@/page/life/children/lifeClind.vue')), 'aa');
+const bb = r => require.ensure([], () => r(require('@/page/share/children/shareClind')), 'bb');
+
 //const home = r => require.ensure([], () => r(require('@/components/Home')), 'home');
 
 
@@ -21,24 +24,26 @@ export default new Router({
     mode: 'history',
     base: __dirname,
     routes: [
-        // {path: '/', components: {
-        //     default:home,
-        //     left:shareClind,
-        //     right:lifeClind
-        // }},
-        // {path: '/home', components: {
-        //     default:doing,
-        //     left:shareClind,
-        //     right:lifeClind
-        // }},
+        {path: '/',name:'home',components: {
+            default:home,
+            left:shareClind, //自定义 组件 在 .vue文件中 用 name 调用
+            right:lifeClind,
+            aa:aa,
+            bb:bb
+        }},
+        {path: '/home',name:'home', components: {
+            default:home,
+            left:shareClind,
+            right:lifeClind
+        }},
         // {path: '/home/:aaa/:bbbb',name:'home',component: home,alias:'bg',
-        {path: '/home',name:'home',component: home ,alias:'/bg',
-          // children:[
-          //     {  path: '/', name:'home', component: shareClind},
-          //     {  path: 'homeClinder', name:'homeClinder', component: homeClinder},
-          //     {  path: 'lifeClind', name:'lifeClind', component: lifeClind}
-          // ]
-        },
+        // {path: '/home',name:'home',component: home ,alias:'/bg',
+        //   // children:[
+        //   //     {  path: '/', name:'home', component: shareClind},
+        //   //     {  path: 'homeClinder', name:'homeClinder', component: homeClinder},
+        //   //     {  path: 'lifeClind', name:'lifeClind', component: lifeClind}
+        //   // ]
+        // },
         {path: '/share',name:'share', component: share,
             // children:[
             //     {  path: 'shareClind',name:'shareClind', component: shareClind},
@@ -53,5 +58,3 @@ export default new Router({
         }
     ]
 })
-
-

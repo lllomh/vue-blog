@@ -1,6 +1,6 @@
 <template>
     <div>
-       <div style="height: 600px;background: red">1111 {{$route.params.id}}</div>
+       <div style="height: 600px;">1111 {{$route.params.id}}</div>
 
     </div>
 </template>
