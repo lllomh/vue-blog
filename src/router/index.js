@@ -19,23 +19,48 @@ const bb = r => require.ensure([], () => r(require('@/page/share/children/shareC
 
 //const home = r => require.ensure([], () => r(require('@/components/Home')), 'home');
 
+import BookView from '../page/book/BookView'
+
 
 export default new Router({
     mode: 'history',
     base: __dirname,
     routes: [
-        {path: '/',name:'home',components: {
-            default:home,
-            left:shareClind, //自定义 组件 在 .vue文件中 用 name 调用
-            right:lifeClind,
-            aa:aa,
-            bb:bb
-        }},
-        {path: '/home',name:'home', components: {
-            default:home,
-            left:shareClind,
-            right:lifeClind
-        }},
+
+        {
+            path: '/',
+            redirect: '/page/'
+        },
+        {
+            path: '/page',
+            component: home,
+            children: [
+                {
+                    path: '',
+                    redirect: '/page/home'
+                },
+                {
+                    path: 'book',
+                    name: 'BookView',
+                    component: BookView
+                }
+            ]
+        }
+
+
+
+        // {path: '/',name:'home',components: {
+        //     default:home,
+        //     left:shareClind, //自定义 组件 在 .vue文件中 用 name 调用
+        //     right:lifeClind,
+        //     aa:aa,
+        //     bb:bb
+        // }},
+        // {path: '/home',name:'home', components: {
+        //     default:home,
+        //     left:shareClind,
+        //     right:lifeClind
+        // }},
         // {path: '/home/:aaa/:bbbb',name:'home',component: home,alias:'bg',
         // {path: '/home',name:'home',component: home ,alias:'/bg',
         //   // children:[
@@ -43,18 +68,18 @@ export default new Router({
         //   //     {  path: 'homeClinder', name:'homeClinder', component: homeClinder},
         //   //     {  path: 'lifeClind', name:'lifeClind', component: lifeClind}
         //   // ]
+        // // },
+        // {path: '/share',name:'share', component: share,
+        //     // children:[
+        //     //     {  path: 'shareClind',name:'shareClind', component: shareClind},
+        //     // ]
         // },
-        {path: '/share',name:'share', component: share,
-            // children:[
-            //     {  path: 'shareClind',name:'shareClind', component: shareClind},
-            // ]
-        },
-        {path: '/about',name:'about', component: about,
-            // children:[
-            //     {  path: 'shareClind',name:'shareClind', component: shareClind},
-            // ]
-        },
-        {path: '/traition',name:'traition', component: traition
-        }
+        // {path: '/about',name:'about', component: about,
+        //     // children:[
+        //     //     {  path: 'shareClind',name:'shareClind', component: shareClind},
+        //     // ]
+        // },
+        // {path: '/traition',name:'traition', component: traition
+        // }
     ]
 })

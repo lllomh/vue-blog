@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer>
-          <!-- <router-view class="main11111111111" name="left" style="background: red;width: 50%;float: left"></router-view>
+           <router-view class="main11111111111" name="lefts" style="background: red;width: 50%;float: left"></router-view>
           <router-view class="main1213213" name="right" style="background: blue;width: 50%;float: right"></router-view>
           <router-view class="aa" name="aa" style="background: red;width: 50%;margin-top:20px;float: left"></router-view>
           <router-view class="bb" name="bb" style="background: blue;width: 50%;margin-top:20px;float: right"></router-view> -->

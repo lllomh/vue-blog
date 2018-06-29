@@ -25,6 +25,10 @@
 
             <!-- <router-link   active-class="addtive"  to="/share"><span>模板分享</span><span class="en">Share</span></router-link> -->
 
+            <router-link style="color: #9F7860" :to="{ name: 'BookView'}">
+                图书
+            </router-link>
+
         </nav>
 
 
