@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'//主路由文件
 Vue.use(Router);//注册路由
 
-
+//test
 const home = r => require.ensure([], () => r(require('@/page/home/home')), 'home');
 const about = r => require.ensure([], () => r(require('@/page/about/about')), 'about');
 const life = r => require.ensure([], () => r(require('@/page/life/life')), 'life');
